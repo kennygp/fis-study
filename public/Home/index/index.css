@@ -1,0 +1,1 @@
+@-webkit-keyframes myfirst{from{background:red}to{background:#ff0}}@-moz-keyframes myfirst{from{background:red}to{background:#ff0}}@keyframes myfirst{from{background:red}to{background:#ff0}}h1{font-size:18px;-webkit-box-shadow:10px 10px 5px #888;box-shadow:10px 10px 5px #888;-webkit-animation:myfirst 5s;-moz-animation:myfirst 5s;animation:myfirst 5s}

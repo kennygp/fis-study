@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+        "ejs": "^2.5.7",
+        "express": "^4.15.4"
+    },
+    "scripts": {
+        "start": "node dev-server.js"
+    }
+}
