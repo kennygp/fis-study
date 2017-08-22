@@ -1,6 +1,11 @@
 {
+    "name": "fis-study",
+    "version": "1.0.0",
+    "description": "fis3学习项目",
+    "main": "dev-server.js",
+    "author": "kenny",
+    "license": "MIT",
     "dependencies": {
-        "ejs": "^2.5.7",
         "express": "^4.15.4"
     },
     "scripts": {
