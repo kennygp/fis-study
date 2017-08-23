@@ -1,1 +1,3 @@
-$(function(){console.log("hello fis3")});
+$(function() {
+    console.log('hello fis3');
+})

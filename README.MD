@@ -15,13 +15,24 @@
   2、插件问题，插件一般都很大，我测试的时候就一个jq，release一下要1秒多，不能忍，所以Common/plugins目录下的所有文件不打包，要用插件请直接放到public/Common/plugins目录下，引入路径参考jq<br/>
   3、插件我还是喜欢这种页面直接引入，模块化的那种我总感觉是把简单的事情复杂了，很多很好使的插件都没有做模块化，还得自己去改，烦！所以怎么简单怎么来<br/>
   4、发布，直接发布到七牛，还没搞，还得仔细看看<br/>
+  5、发布七牛不知道哪有问题，反正创建空间的时候不能用华南的，用了就发布报错<br/>
+  6、发布七牛后插件加载路径还是有问题，还有就是七牛缓存问题<br/>
+
+2017-08-23更新：
+--------------
+  
+  1、解决待优化1<br/>
+  2、修改待优化2，插件引入参考jq引入<br/>
+  3、待优化4已完成，命令fis3 release rls(这个不知道取啥了，就取了release里的三个字母，比较好记)<br/>
+  4、为了方便调试，开发环境JS不压缩，css会压缩，因为css还是比较好调试的<br/>
 
 快速开始：
 --------------
       1、克隆我的仓库；
       2、命令行 npm install 安装依赖；
-      3、安装fis3，这个找度娘要，然后用到的fis3插件:fis-parser-less,fis3-postpackager-loader,fis-hook-ejs-include-path,fis3-parser-render-ejs ；
-      4、进入根目录，执行npm start,会直接打开默认浏览器，地址是：http://localhost:3000/?view=Home/index/index
+      3、安装fis3，这个找度娘要，然后用到的fis3插件:fis-parser-less,fis3-postpackager-loader,fis-hook-ejs-include-path,fis3-parser-render-ejs,fis3-deploy-qiniu ；
+      4、进入根目录，执行npm start,会直接打开默认浏览器，地址是：http://localhost:3000/?view=Home/index/index；
+      5、要是不要直接打开，就把dev-server.js的最后一行删了
 
 #### 希望得到你的STAR
 半半调子前端求<b>Star</b> ！你们看嘛，半半调子前端都没<b>Star</b>
