@@ -9,6 +9,7 @@
         "express": "^4.15.4"
     },
     "scripts": {
-        "start": "node dev-server.js"
+        "start": "node dev-server.js",
+        "plugins":"npm install -g fis-parser-less fis3-postpackager-loader fis-hook-ejs-include-path fis3-parser-render-ejs fis3-deploy-qiniu"
     }
 }

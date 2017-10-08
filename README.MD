@@ -34,9 +34,9 @@
 快速开始：
 --------------
       1、克隆我的仓库；
-      2、命令行 npm install 安装依赖；
-      3、安装fis3，这个找度娘要，然后用到的fis3插件:fis-parser-less,fis3-postpackager-loader,fis-hook-ejs-include-path,fis3-parser-render-ejs,fis3-deploy-qiniu ；
-      4、进入根目录，执行npm start,会直接打开默认浏览器，地址是：http://localhost:3000/?view=Home/index/index；
+      2、进入根目录，命令行 npm install 安装依赖；
+      3、安装fis3，这个找度娘要，然后安装插件 npm run plugins ；
+      4、执行npm start,会直接打开默认浏览器，地址是：http://localhost:3000/?view=Home/index/index；
       5、要是不要直接打开，就把dev-server.js的最后一行删了
 
 #### 希望得到你的STAR
