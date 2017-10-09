@@ -5,7 +5,6 @@ app.get('/*', function(req, res) {
     if (req.query.view) {
         var cmdStr = 'cd src && fis3 release -d ../public';
         c.exec(cmdStr, function(err, stdout, stderr) {
-        	console.log(cmdStr);
             res.sendFile(__dirname + '/public/' + req.query.view + '.html');
         });
     } else {
@@ -16,6 +15,8 @@ app.get('/*', function(req, res) {
         }
     }
 });
+
+
 
 var server = app.listen(3000, function() {
     var host = server.address().address;
