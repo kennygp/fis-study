@@ -4,16 +4,152 @@
 <head>
     <meta charset="utf-8">
     <title>fis-study</title>
-    <link rel="stylesheet" type="text/css" href="/public/Common/common.css">
-    <link rel="stylesheet" type="text/css" href="/public/Home/index/index.css">
     
-    <script type="text/javascript" src="/Common/plugins/jquery-2.2.4.min.js"></script>
+
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="pragram" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="/public/Common/etui.css">
+    <link rel="stylesheet" type="text/css" href="/public/Common/common.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_375568_70yba5h7j2dtpgb9.css">
+	<script type="text/javascript" src="/Common/plugins/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/public/Home/index/index.css">
 </head>
 
 <body>
+    <!--
     <h1>哈喽，fis3</h1>
     <h1>哈喽，fis3</h1><h1>哈喽，fis3</h1><h1>哈喽，fis3</h1>
-    <script type="text/javascript" src="/public/Home/index/index.js"></script>
+    -->
+<!-- ui-page集合的容器，里面放多个平行的.ui-page，其他.ui-page作为内联页面由路由控制展示 -->
+<div class="ui-page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="ui-page ui-page-current">
+    	
+    	<!--底部导航开始-->
+    	<nav class="ui-bar ui-bar-tab">
+     <a class="ui-tab-item" href="/bangwoce/Mall/index.html?v=MSsZY" style="color: #F02F30;">
+         <span class="ui-icon icon-home"></span>
+         <span class="ui-tab-label">首页</span>
+     </a>
+     <a class="ui-tab-item" href="/bangwoce/Mall/card.html?v=MSsZY">
+         <span class="ui-icon icon-category1"></span>
+         <span class="ui-tab-label">分类</span>
+     </a>
+     <a class="ui-tab-item" href="/bangwoce/Mall/order.html?v=MSsZY">
+         <span class="ui-icon icon-kefu"></span>
+         <span class="ui-tab-label">客服</span>
+     </a>
+     <a class="ui-tab-item" href="/bangwoce/Mall/contact.html?v=MSsZY">
+         <span class="ui-icon icon-gouwuchekong"></span>
+         <span class="ui-tab-label ">购物车</span>
+     </a>
+     <a class="ui-tab-item" href="/bangwoce/Mall/contact.html?v=MSsZY">
+         <span class="ui-icon icon-wode"></span>
+         <span class="ui-tab-label ">我的</span>
+     </a>
+</nav>
+    	<!--底部导航结束-->
+    	
+        <!-- 页面内容区 开始-->
+        <div class="ui-content">
+        	
+        	<!--搜索开始-->
+        	<div class="ui-cell search_box">
+        		<div class="search_lt">
+        			<i class="iconfont icon-scan-o"></i>
+        			<div>扫一扫</div>
+        		</div>
+        		<a href="" class="ui-cell-primary search_ml">
+        			<div class="ui-cell search_info">
+        				<div class="ui-cell-primary">请输入商品名称</div>
+        				<div><i class="iconfont icon-sousuo"></i></div>
+        			</div>
+        		</a>
+        		<div class="search_rt"> 
+        			<i class="iconfont icon-message"></i>
+        			<!--消息数量-->
+        			<span>9</span>
+        		</div>
+        	</div>
+        	<!--搜索结束-->
+        	
+        	<!--banner轮播开始-->
+        	<div>
+        		<img class="img_100" src="http://placehold.it/750x300"/>
+        	</div>
+        	<!--banner轮播结束-->
+        	
+        	<!--商品分类开始-->
+        	<div class="cagatory clearfix">
+        		<div class="cagatory_item">
+	<div class="cagatory_item_img">
+		<div><img class="img_100" src="http://placehold.it/80x80"/></div>
+	</div>
+	<div class="cagatory_item_tx">公司简介</div>
+</div><div class="cagatory_item">
+	<div class="cagatory_item_img">
+		<div><img class="img_100" src="http://placehold.it/80x80"/></div>
+	</div>
+	<div class="cagatory_item_tx">公司简介</div>
+</div><div class="cagatory_item">
+	<div class="cagatory_item_img">
+		<div><img class="img_100" src="http://placehold.it/80x80"/></div>
+	</div>
+	<div class="cagatory_item_tx">公司简介</div>
+</div><div class="cagatory_item">
+	<div class="cagatory_item_img">
+		<div><img class="img_100" src="http://placehold.it/80x80"/></div>
+	</div>
+	<div class="cagatory_item_tx">公司简介</div>
+</div><div class="cagatory_item">
+	<div class="cagatory_item_img">
+		<div><img class="img_100" src="http://placehold.it/80x80"/></div>
+	</div>
+	<div class="cagatory_item_tx">公司简介</div>
+</div><div class="cagatory_item">
+	<div class="cagatory_item_img">
+		<div><img class="img_100" src="http://placehold.it/80x80"/></div>
+	</div>
+	<div class="cagatory_item_tx">公司简介</div>
+</div><div class="cagatory_item">
+	<div class="cagatory_item_img">
+		<div><img class="img_100" src="http://placehold.it/80x80"/></div>
+	</div>
+	<div class="cagatory_item_tx">公司简介</div>
+</div><div class="cagatory_item">
+	<div class="cagatory_item_img">
+		<div><img class="img_100" src="http://placehold.it/80x80"/></div>
+	</div>
+	<div class="cagatory_item_tx">公司简介</div>
+</div>
+        	</div>
+        	<!--商品分类结束-->
+        	
+        	<!--论坛开始-->
+        	<div class="forum ui-cell">
+        		<div><img class="img_100" src="http://placehold.it/150x150"/></div>
+        		<div class="ui-cell-primary">
+        			<div class="ui-cell">
+        				<div>热评</div>
+        				<div class="ui-cell-primary">
+        					<!--循环此处div做轮播效果-->
+        					<div class="ui-nowrap">C1驾照新规，这两类车也能开！</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<!--论坛结束-->
+        	
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/public/Home/index/index.js"></script>
 </body>
 
 </html>

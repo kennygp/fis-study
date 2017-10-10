@@ -4,20 +4,87 @@
 <head>
     <meta charset="utf-8">
     <title>fis-study</title>
-    <link rel="stylesheet" type="text/css" href="../../Common/common.less">
+    <%- include('../../Parts/header') %>
     <link rel="stylesheet" type="text/css" href="./index.less">
-    
-    <script type="text/javascript" src="/Common/plugins/jquery-2.2.4.min.js"></script>
 </head>
 
 <body>
+    <!--
     <%- include('../../Parts/hello') %>
     <%
         for(var i=0;i<3;i++){
     %><%- include('../../Parts/hello') %><%
         }
     %>
-    <script type="text/javascript" src="./index.js"></script>
+    -->
+<!-- ui-page集合的容器，里面放多个平行的.ui-page，其他.ui-page作为内联页面由路由控制展示 -->
+<div class="ui-page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="ui-page ui-page-current">
+    	
+    	<!--底部导航开始-->
+    	<%- include('../../Parts/nav') %>
+    	<!--底部导航结束-->
+    	
+        <!-- 页面内容区 开始-->
+        <div class="ui-content">
+        	
+        	<!--搜索开始-->
+        	<div class="ui-cell search_box">
+        		<div class="search_lt">
+        			<i class="iconfont icon-scan-o"></i>
+        			<div>扫一扫</div>
+        		</div>
+        		<a href="" class="ui-cell-primary search_ml">
+        			<div class="ui-cell search_info">
+        				<div class="ui-cell-primary">请输入商品名称</div>
+        				<div><i class="iconfont icon-sousuo"></i></div>
+        			</div>
+        		</a>
+        		<div class="search_rt"> 
+        			<i class="iconfont icon-message"></i>
+        			<!--消息数量-->
+        			<span>9</span>
+        		</div>
+        	</div>
+        	<!--搜索结束-->
+        	
+        	<!--banner轮播开始-->
+        	<div>
+        		<img class="img_100" src="http://placehold.it/750x300"/>
+        	</div>
+        	<!--banner轮播结束-->
+        	
+        	<!--商品分类开始-->
+        	<div class="cagatory clearfix">
+        		<%
+			        for(var i=0;i<8;i++){
+			    %><%- include('../../Parts/cagatroy') %><%
+			        }
+			    %>
+        	</div>
+        	<!--商品分类结束-->
+        	
+        	<!--论坛开始-->
+        	<div class="forum ui-cell">
+        		<div><img class="img_100" src="http://placehold.it/150x150"/></div>
+        		<div class="ui-cell-primary">
+        			<div class="ui-cell">
+        				<div>热评</div>
+        				<div class="ui-cell-primary">
+        					<!--循环此处div做轮播效果-->
+        					<div class="ui-nowrap">C1驾照新规，这两类车也能开！</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<!--论坛结束-->
+        	
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./index.js"></script>
 </body>
 
 </html>
